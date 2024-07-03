@@ -4,7 +4,7 @@ pragma solidity ^0.8.25;
 contract BankAccount{
 
     //events 
-    event CreateAccount(address _owner,uint256 _amount,uint256 _time);
+    event CreateAccount(address indexed _owner,uint256 indexed _amount,uint256  _time);
     event Deposit(address _depositer,uint256 _amount,uint256 _time);
     event  Withdraw (address _withdrawer,uint256 _amount,uint256 _time);
     event  Send(address _from, address _to, uint256 _amount, uint256 _time);
